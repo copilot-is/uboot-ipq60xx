@@ -1,23 +1,21 @@
 You will also like to see https://github.com/lgs2007m/cdt-gpt-ipq60xx-generate
 
-## build env
+U-Boot source code base on https://github.com/gl-inet/uboot-ipq60xx
 
-OS: ubuntu 18.04
+## Build for Ubuntu
+
+PS: The mbn scripts run with python2.7, you should install and switch to python2.7
 
 ```bash
 sudo bash -c  "apt update && apt install git python build-essential device-tree-compiler -y"
 ```
 
-## uboot build 
-u-boot-2016 source code base on https://github.com/gl-inet/uboot-ipq60xx
-
-PS: The mbn scripts run with python2.7, you should install and switch to python2.7.
 ```
-git clone https://github.com/lgs2007m/uboot-ipq60xx-build
-cd uboot-ipq60xx-build/
+git clone https://github.com/copilot-is/uboot-ipq60xx
+cd uboot-ipq60xx/
 ./build.sh
 ```
 
-The uboot binary will be: uboot-ipq60xx-build/u-boot.mbn
+The uboot binary will be: uboot-ipq60xx/JDC_AX1800_Pro_Uboot.mbn
 
 The uboot failsafe HTTP server ip: 192.168.1.1
