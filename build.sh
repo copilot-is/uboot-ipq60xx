@@ -15,7 +15,7 @@ arm-openwrt-linux-strip u-boot
 echo "Convert elf to mbn"
 python2.7 scripts_mbn/elftombn.py -f ./u-boot -o ./u-boot.mbn -v 6
 
-echo "Copy u-boot.mbn to root directory"
-mv ./u-boot.mbn ../u-boot.mbn
+echo "Copy JDC_AX1800_Pro_Uboot.mbn to root directory"
+mv ./u-boot.mbn ../JDC_AX1800_Pro_Uboot.mbn
 
 echo "Done!"
